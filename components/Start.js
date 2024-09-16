@@ -120,7 +120,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "300",
     color: "#757083",
-    opacity: "100%",
+    opacity: 1.0,
     margin: 10,
   },
   colorBtnContainer: {
