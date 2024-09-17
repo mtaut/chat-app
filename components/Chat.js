@@ -16,7 +16,7 @@ const Chat = ({ route, navigation }) => {
     setMessages([
       {
         _id: 1,
-        text: "You have entered a Chatty",
+        text: "Welcome to the Chatty",
         createdAt: new Date(),
         user: {
           _id: 2,
