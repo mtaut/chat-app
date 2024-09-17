@@ -6,6 +6,8 @@ import {
   TextInput,
   TouchableOpacity,
   ImageBackground,
+  KeyboardAvoidingView,
+  Platform,
 } from "react-native";
 
 // this is the landing/start screen
@@ -60,10 +62,17 @@ const Start = ({ navigation }) => {
           <Text style={styles.buttonText}>Start a Chatty</Text>
         </TouchableOpacity>
       </View>
+      {Platform.OS === "android" ? (
+        <KeyboardAvoidingView behavior="height" />
+      ) : null}
+      {Platform.OS === "ios" ? (
+        <KeyboardAvoidingView behavior="padding" />
+      ) : null}
     </ImageBackground>
   );
 };
 
+// start screen element styles
 const styles = StyleSheet.create({
   container: {
     width: "88%",
@@ -72,7 +81,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-around",
     alignItems: "center",
     borderRadius: 4,
-    margin: 90, // adjusted this to 30 and looked good, but blocked the input bar when typing. Fix this when KeyboardAvoidingView is added...
+    margin: 60, // adjusted this from 30, which seems to look best. adjusted again after adding KeyboardAvoidingView
   },
   image: {
     flex: 1,
@@ -82,7 +91,7 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   appTitle: {
-    marginBottom: "30%", // set the title to 60%-and liked it-but re-adjusted until KeyboardAvoidingView is added...
+    marginBottom: "45%", // re-adjusted this with KeyboardAvoidingView, but it disappears anyway when typing name
     fontSize: 45,
     fontWeight: "600",
     color: "#FFFFFF",
@@ -98,7 +107,7 @@ const styles = StyleSheet.create({
     padding: 15,
     borderWidth: 1,
     borderRadius: 4,
-    marginTop: 10, // keeping this and borderRadius the same as the startButton marginBottom for consistency
+    marginTop: 10, // keeping this close to startButton-marginBottom for consistency
   },
   startButton: {
     backgroundColor: "#757083",
@@ -106,7 +115,7 @@ const styles = StyleSheet.create({
     width: "88%",
     padding: 20,
     borderRadius: 4,
-    marginBottom: 10,
+    marginBottom: 17, // moved this up from 10 (matching textInput marginTop) so full button can be viewed and pressed after entering name
   },
   buttonText: {
     fontSize: 16,
