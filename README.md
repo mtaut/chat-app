@@ -9,9 +9,28 @@ location. The app uses Firebase integration for user authentication and data sto
 
 ## Screens
 
-1. **Start Screen:**<br/>-Users can enter their name and select a chat background color.<br/>-Provides access to the chat screen.
-2. **Chat Screen:**<br/>-Displays a real-time chat interface using `GiftedChat`.<br/>-Users can send and receive text messages.<br/>-Users can also pick and send images from the phone's image library.<br/>-Users can send their location via the chat in a map view.
+1. **Start Screen:**
+
+-Users can enter their name and select a chat background color.
+
+-Provides access to the chat screen.
+
+2. **Chat Screen:**
+
+-Displays a real-time chat interface using `GiftedChat`.
+
+-Users can send and receive text messages.
+
+-Users can also pick and send images from the phone's image library.
+
+-Users can send their location via the chat in a map view.
 
 ## Technologies
 
-**-React Native**<br/>**-Firebase**<br/>**-GiftedChat**<br/>**-Expo**
+**-React Native**
+
+**-Firebase**
+
+**-GiftedChat**
+
+**-Expo**
