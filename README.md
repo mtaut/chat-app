@@ -14,4 +14,4 @@ location. The app uses Firebase integration for user authentication and data sto
 
 ## Technologies
 
-**-React Native:** Framework for building cross-platform mobile apps.<br/>
+**-React Native**<br/>**-Firebase**<br/>**-GiftedChat**<br/>**-Expo**
