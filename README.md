@@ -79,5 +79,10 @@ location. The app uses Firebase integration for user authentication and data sto
 
 - Add Firebase credentials to project. These can be found in Firebase settings ---> General ---> SDK setup and configuration ---> const firebaseConfig = {};
 
+- change rules to allow read/write to: `allow read, write: if true;`
+
 - Start the app:
+
   - 'npm start'
+
+- Run app on Android Emulator or iOS Simulator
