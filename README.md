@@ -33,7 +33,9 @@ location. The app uses Firebase integration for user authentication and data sto
 
 - Users can send their location via the chat in a map view.
 
-## Technologies
+## Getting Started
+
+### Technologies
 
 - React Native
 
@@ -41,4 +43,32 @@ location. The app uses Firebase integration for user authentication and data sto
 
 - GiftedChat
 
-- Expo
+- Expo and Expo Go app
+
+### Dependencies
+
+- @react-native-async-storage/async-storage: ^1.24.0
+
+- @react-navigation/native: ^6.1.18
+
+- @react-navigation/native-stack: ^6.11.0
+
+- expo: ^51.0.32
+
+- expo-status-bar: ~1.12.1
+
+- firebase: ^10.3.1
+
+- react: 18.2.0
+
+- react-native: 0.74.5
+
+- react-native-get-random-values: ^1.11.0
+
+- react-native-gifted-chat: ^2.6.3
+
+- react-native-reanimated: ^3.10.1
+
+- react-native-safe-area-context: 4.10.5
+
+- react-native-screens: 3.31.1
