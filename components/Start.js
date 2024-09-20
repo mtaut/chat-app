@@ -8,10 +8,30 @@ import {
   ImageBackground,
   KeyboardAvoidingView,
   Platform,
+  Alert,
 } from "react-native";
+import { getAuth, signInAnonymously } from "firebase/auth";
 
 // this is the landing/start screen
 const Start = ({ navigation }) => {
+  // user sign-in logic to Firebase Database
+  const auth = getAuth();
+
+  const signInUser = () => {
+    signInAnonymously(auth)
+      .then((result) => {
+        navigation.navigate("Chat", {
+          userID: result.user.uid,
+          name: name,
+          backgroundColor: backgroundColor,
+        });
+        Alert.alert("Signed in Successfully!");
+      })
+      .catch((error) => {
+        Alert.alert("Unable to sign in, try again later.");
+      });
+  };
+
   // empty state to take name value
   const [name, setName] = useState("");
   // colors array and empty state for users to select for app background color of chat's UI
@@ -52,12 +72,13 @@ const Start = ({ navigation }) => {
         </View>
         <TouchableOpacity
           style={styles.startButton}
-          onPress={() =>
-            navigation.navigate("Chat", {
-              name: name,
-              backgroundColor: backgroundColor,
-            })
-          }
+          onPress={() => {
+            if (name == "") {
+              Alert.alert("Enter Your Name");
+            } else {
+              signInUser();
+            }
+          }}
         >
           <Text style={styles.buttonText}>Start a Chatty</Text>
         </TouchableOpacity>
