@@ -27,10 +27,10 @@ location. The app uses Firebase integration for user authentication and data sto
 
 ## Technologies
 
-** - React Native **
+- React Native
 
-** - Firebase**
+- Firebase
 
-** - GiftedChat **
+- GiftedChat
 
-** - Expo **
+- Expo
