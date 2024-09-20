@@ -78,3 +78,6 @@ location. The app uses Firebase integration for user authentication and data sto
 - Create a Firebase project in the Google Cloud Firebase Firestore console.
 
 - Add Firebase credentials to project. These can be found in Firebase settings ---> General ---> SDK setup and configuration ---> const firebaseConfig = {};
+
+- Start the app:
+  - 'npm start'
