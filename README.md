@@ -5,4 +5,4 @@ location. The app uses Firebase integration for user authentication and data sto
 
 ## Features
 
--**Real-time messaging:** send and receive messages instantly with the use of Firebase Firestore. <br/>-**User Authentication:** authenticate users anonymously with Google Firebase authentication. -**Customizable UI:** users can select a background color for their chat interface. -**Additional Communication Features:** users have the ability to send images and location data. -**Data storage:** data gets stored online and offline.
+-**Real-time messaging:** send and receive messages instantly with the use of Firebase Firestore. <br/>-**User Authentication:** authenticate users anonymously with Google Firebase authentication.<br/> -**Customizable UI:** users can select a background color for their chat interface.<br/> -**Additional Communication Features:** users have the ability to send images and location data. <br/>-**Data storage:** data gets stored online and offline.
