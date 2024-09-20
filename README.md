@@ -72,3 +72,9 @@ location. The app uses Firebase integration for user authentication and data sto
 - react-native-safe-area-context: 4.10.5
 
 - react-native-screens: 3.31.1
+
+## Setup Firebase
+
+- Create a Firebase project in the Google Cloud Firebase Firestore console.
+
+- Add Firebase credentials to project. These can be found in Firebase settings ---> General ---> SDK setup and configuration ---> const firebaseConfig = {};
