@@ -11,19 +11,19 @@ location. The app uses Firebase integration for user authentication and data sto
 
 1. **Start Screen:**
 
--Users can enter their name and select a chat background color.
+- Users can enter their name and select a chat background color.
 
--Provides access to the chat screen.
+- Provides access to the chat screen.
 
 2. **Chat Screen:**
 
--Displays a real-time chat interface using `GiftedChat`.
+- Displays a real-time chat interface using `GiftedChat`.
 
--Users can send and receive text messages.
+- Users can send and receive text messages.
 
--Users can also pick and send images from the phone's image library.
+- Users can also pick and send images from the phone's image library.
 
--Users can send their location via the chat in a map view.
+- Users can send their location via the chat in a map view.
 
 ## Technologies
 
