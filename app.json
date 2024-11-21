@@ -1,5 +1,7 @@
 {
   "expo": {
+    "platforms": ["ios", "android"],
+    "newArchEnabled": true,
     "name": "chat-app",
     "slug": "chat-app",
     "version": "1.0.0",

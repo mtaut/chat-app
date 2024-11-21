@@ -39,7 +39,6 @@ const Start = ({ navigation }) => {
   const [backgroundColor, setBackgroundColor] = useState("");
 
   return (
-    // will need to add KeyboardAvoidingView here
     <ImageBackground
       source={require("../img/background-image.png")}
       resizeMode="cover"
@@ -57,9 +56,9 @@ const Start = ({ navigation }) => {
           <Text style={styles.appColorText}>Choose a Background Color:</Text>
           <View style={styles.colorBtnContainer}>
             {/* map over colors array to render chat UI background color buttons */}
-            {colors.map((color, index) => (
+            {colors.map((color) => (
               <TouchableOpacity
-                key={index}
+                key={color}
                 style={[
                   styles.appColorBtn,
                   { backgroundColor: color },
